@@ -1,0 +1,40 @@
+Feature_Type, Output_ColName, Input_ColName1, Input_ColName2, Input_ColName3, Input_ColName4
+Distance, absdiffLowerLegs_x, LeftLowerLeg_x, RightLowerLeg_x
+Distance, absdiffLowerLegs_y, LeftLowerLeg_y, RightLowerLeg_y
+Distance, absdiffLowerLegs_z, LeftLowerLeg_z, RightLowerLeg_z
+Distance, absdiffHands_x, LeftHand_x, RightHand_x
+Distance, absdiffHands_y, LeftHand_y, RightHand_y
+Distance, absdiffHands_z, LeftHand_z, RightHand_z
+Distance, absdiffFeet_x, LeftFoot_x, RightFoot_x
+Distance, absdiffFeet_y, LeftFoot_y, RightFoot_y
+Distance, absdiffFeet_z, LeftFoot_z, RightFoot_z
+Distance, feetDistance, LeftFoot_x:LeftFoot_y:LeftFoot_z, RightFoot_x:RightFoot_y:RightFoot_z
+Distance, absdiffForeArm_x, LeftForeArm_x, RightForeArm_x
+Distance, absdiffForeArm_y, LeftForeArm_y, RightForeArm_y
+Distance, absdiffForeArm_z, LeftForeArm_z, RightForeArm_z
+CenterPoint, shouldersaverage_x, LeftShoulder_x, RightShoulder_x
+CenterPoint, shouldersaverage_y, LeftShoulder_y, RightShoulder_y
+CenterPoint, shouldersaverage_z, LeftShoulder_z, RightShoulder_z
+Distance, difflowertoupperbody_x, shouldersaverage_x, Pelvis_x
+Distance, difflowertoupperbody_y, shouldersaverage_y, Pelvis_y
+Distance, difflowertoupperbody_z, shouldersaverage_z, Pelvis_z
+NormalLinetoPlane, trunk_orth, LeftShoulder_x:LeftShoulder_y:LeftShoulder_z, RightShoulder_x:RightShoulder_y:RightShoulder_z, Pelvis_x:Pelvis_y:Pelvis_z
+NormalLinetoPlane, lower_orth, LeftLowerLeg_x:LeftLowerLeg_y:LeftLowerLeg_z, RightLowerLeg_x:RightLowerLeg_y:RightLowerLeg_z, Pelvis_x:Pelvis_y:Pelvis_z
+AngleCosine, trunk_twist, trunk_orth_x:trunk_orth_y:trunk_orth_z, lower_orth_x:lower_orth_y:lower_orth_z
+Gyro, Head,Head_qW,Head_qX,Head_qY,Head_qZ,
+Gyro, LeftFoot,LeftFoot_qW,LeftFoot_qX,LeftFoot_qY,LeftFoot_qZ
+Gyro, LeftForeArm,LeftForeArm_qW,LeftForeArm_qX,LeftForeArm_qY,LeftForeArm_qZ
+Gyro, LeftHand,LeftHand_qW,LeftHand_qX,LeftHand_qY,LeftHand_qZ
+Gyro, LeftLowerLeg,LeftLowerLeg_qW,LeftLowerLeg_qX,LeftLowerLeg_qY,LeftLowerLeg_qZ
+Gyro, LeftShoulder,LeftShoulder_qW,LeftShoulder_qX,LeftShoulder_qY,LeftShoulder_qZ
+Gyro, LeftUpperArm,LeftUpperArm_qW,LeftUpperArm_qX,LeftUpperArm_qY,LeftUpperArm_qZ
+Gyro, LeftUpperLeg,LeftUpperLeg_qW,LeftUpperLeg_qX,LeftUpperLeg_qY,LeftUpperLeg_qZ
+Gyro, Pelvis,Pelvis_qW,Pelvis_qX,Pelvis_qY,Pelvis_qZ
+Gyro, RightFoot,RightFoot_qW,RightFoot_qX,RightFoot_qY,RightFoot_qZ
+Gyro, RightForeArm,RightForeArm_qW,RightForeArm_qX,RightForeArm_qY,RightForeArm_qZ
+Gyro, RightHand,RightHand_qW,RightHand_qX,RightHand_qY,RightHand_qZ
+Gyro, RightLowerLeg,RightLowerLeg_qW,RightLowerLeg_qX,RightLowerLeg_qY,RightLowerLeg_qZ
+Gyro, RightShoulder,RightShoulder_qW,RightShoulder_qX,RightShoulder_qY,RightShoulder_qZ
+Gyro, RightUpperArm,RightUpperArm_qW,RightUpperArm_qX,RightUpperArm_qY,RightUpperArm_qZ
+Gyro, RightUpperLeg,RightUpperLeg_qW,RightUpperLeg_qX,RightUpperLeg_qY,RightUpperLeg_qZ
+Gyro, T8,T8_qW,T8_qX,T8_qY,T8_qZ
